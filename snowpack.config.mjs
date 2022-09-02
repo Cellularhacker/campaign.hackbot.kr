@@ -1,5 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 import sveltePreprocess from "svelte-preprocess";
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
 
 export default {
   mount: {
@@ -16,6 +18,7 @@ export default {
         ...(process.versions.pnp ? {tsc: 'yarn pnpify tsc'} : {}),
       },
     ],
+    '@snowpack/plugin-postcss'
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -30,11 +33,14 @@ export default {
   },
   devOptions: {
     /* ... */
+    tailwindConfig: './tailwind.config.js'
   },
   buildOptions: {
     /* ... */
   },
   preprocess: sveltePreprocess({
-    postcss: [import("tailwindcss"), import("autoprefixer")]
+    postcss: {
+      plugins: [tailwindcss, autoprefixer]
+    }
   })
 };

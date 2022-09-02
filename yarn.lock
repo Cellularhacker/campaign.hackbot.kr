@@ -273,6 +273,16 @@
     dotenv "^8.2.0"
     dotenv-expand "^5.1.0"
 
+"@snowpack/plugin-postcss@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-postcss/-/plugin-postcss-1.4.3.tgz#09704923033bd710e50a466bfc0afc90c7cc59df"
+  integrity sha512-RJGYagse6Pi86Bqm8vPukhCwFVa92VIB81qP3PXPQ/ITQy5gVWDYi4oU+r1A6hsEZ9scUNZevfw6ISya+oiMNQ==
+  dependencies:
+    minimatch "^3.0.4"
+    normalize-path "^3.0.0"
+    postcss-load-config "^3.0.1"
+    workerpool "^6.1.2"
+
 "@snowpack/plugin-svelte@^3.6.1":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@snowpack/plugin-svelte/-/plugin-svelte-3.7.0.tgz#3f604fe17d7a82cd64fbac0c89b087b64c0b31e5"
@@ -3548,7 +3558,7 @@ postcss-js@^4.0.0:
   dependencies:
     camelcase-css "^2.0.1"
 
-postcss-load-config@^3.1.4:
+postcss-load-config@^3.0.1, postcss-load-config@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-3.1.4.tgz#1ab2571faf84bb078877e1d07905eabe9ebda855"
   integrity sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==
@@ -4673,6 +4683,11 @@ wordwrapjs@^4.0.0:
   dependencies:
     reduce-flatten "^2.0.0"
     typical "^5.2.0"
+
+workerpool@^6.1.2:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/workerpool/-/workerpool-6.2.1.tgz#46fc150c17d826b86a008e5a4508656777e9c343"
+  integrity sha512-ILEIE97kDZvF9Wb9f6h5aXK4swSlKGUcOEGiIYb2OOu/IrDU9iwj0fD//SsA6E5ibwJxpEvhullJY4Sl4GcpAw==
 
 wrap-ansi@^6.2.0:
   version "6.2.0"
