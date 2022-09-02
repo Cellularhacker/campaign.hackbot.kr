@@ -1,5 +1,7 @@
 <script lang="ts">
-  import {onMount} from 'svelte'
+  import {onMount} from 'svelte';
+  import Router from 'svelte-spa-router';
+  import Prevention from "./routes/Prevention.svelte";
 
   let count: number = 0
   onMount(() => {
@@ -62,15 +64,21 @@
   }
 </style>
 
-<div class="App">
-  <header class="App-header">
-    <img src="/logo.svg" class="App-logo" alt="logo"/>
-    <p>Edit <code>src/App.svelte</code> and save to reload.</p>
-    <p>Page has been open for <code>{count}</code> seconds.</p>
-    <p>
-      <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
-        Learn Svelte
-      </a>
-    </p>
-  </header>
-</div>
+<!--<div class="App">-->
+<!--  <header class="App-header">-->
+<!--    <img src="/logo.svg" class="App-logo" alt="logo"/>-->
+<!--    <p>Edit <code>src/App.svelte</code> and save to reload.</p>-->
+<!--    <p>Page has been open for <code>{count}</code> seconds.</p>-->
+<!--    <p>-->
+<!--      <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">-->
+<!--        Learn Svelte-->
+<!--      </a>-->
+<!--    </p>-->
+<!--  </header>-->
+<!--</div>-->
+
+<Router
+  routes={{
+    "/prevention": Prevention
+  }}
+/>

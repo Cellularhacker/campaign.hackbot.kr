@@ -1,4 +1,6 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
+import sveltePreprocess from "svelte-preprocess";
+
 export default {
   mount: {
     public: {url: '/', static: true},
@@ -17,7 +19,7 @@ export default {
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    {"match": "routes", "src": ".*", "dest": "/index.html"},
   ],
   optimize: {
     /* Example: Bundle your final build: */
@@ -32,4 +34,7 @@ export default {
   buildOptions: {
     /* ... */
   },
+  preprocess: sveltePreprocess({
+    postcss: [import("tailwindcss"), import("autoprefixer")]
+  })
 };
