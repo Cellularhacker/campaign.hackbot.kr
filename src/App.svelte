@@ -1,5 +1,4 @@
 <script lang="ts">
-  import {onMount} from 'svelte';
   import Router from 'svelte-spa-router';
   import Prevention from "./routes/Prevention.svelte";
 
@@ -76,9 +75,10 @@
 <!--    </p>-->
 <!--  </header>-->
 <!--</div>-->
-
+<div>
 <Router
   routes={{
     "/prevention": Prevention
   }}
 />
+</div>
