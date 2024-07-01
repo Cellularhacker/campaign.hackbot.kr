@@ -3,7 +3,6 @@ build
 node_modules
 .idea
 .vscode
-/.yarn
 
 # Ignore docs files
 _gh_pages
@@ -45,6 +44,11 @@ validation-status.json
 validation-report.json
 
 # Folders to ignore
-.yarn
-bower_components
-.pnp*
+# MARK: Using Zero installs
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

@@ -6,9 +6,9 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
-    "svelte": "^4.2.0",
-    "svelte-hmr": "^0.15.3",
-    "svelte-spa-router": "^3.3.0",
+    "svelte": "^4.2.18",
+    "svelte-hmr": "^0.16.0",
+    "svelte-spa-router": "^4.0.1",
     "svelte-store": "^0.0.2"
   },
   "devDependencies": {
@@ -17,21 +17,21 @@
     "@snowpack/plugin-svelte": "^3.7.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@snowpack/web-test-runner-plugin": "^0.2.2",
-    "@testing-library/svelte": "^4.0.3",
-    "@tsconfig/svelte": "^5.0.1",
-    "@types/chai": "^4.3.5",
-    "@types/mocha": "^10.0.1",
-    "@types/snowpack-env": "^2.3.4",
-    "@web/test-runner": "^0.17.0",
-    "@yarnpkg/pnpify": "^4.0.0-rc.49",
-    "autoprefixer": "^10.4.15",
-    "chai": "^4.3.7",
-    "postcss": "^8.4.28",
-    "prettier": "^3.0.2",
+    "@testing-library/svelte": "^5.2.0",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
+    "@types/snowpack-env": "^2.3.7",
+    "@web/test-runner": "^0.18.2",
+    "@yarnpkg/pnpify": "^4.1.0",
+    "autoprefixer": "^10.4.19",
+    "chai": "^5.1.1",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
     "snowpack": "^3.8.8",
-    "svelte-preprocess": "^5.0.4",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6"
+    "svelte-preprocess": "^6.0.1",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
   },
   "packageManager": "yarn@3.6.2"
 }
