@@ -47,3 +47,4 @@ validation-report.json
 # Folders to ignore
 .yarn
 bower_components
+.pnp*
