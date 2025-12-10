@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": ["src", "types"],
+  "exclude": ["**/.pnp.cjs", "**/.pnp.loader.mjs", "**/.pnp.config.js"],
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",
@@ -22,6 +23,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "useDefineForClassFields": true,
-    "allowSyntheticDefaultImports": true,
-  }
+    "allowSyntheticDefaultImports": true
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

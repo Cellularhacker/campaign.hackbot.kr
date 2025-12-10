@@ -1,37 +1,36 @@
 {
   "scripts": {
-    "dev": "snowpack dev",
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.ts\""
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5000",
+    "test": "web-test-runner \"src/**/*.test.ts\"",
+    "help": "vite build --help"
   },
   "dependencies": {
-    "svelte": "^4.2.18",
-    "svelte-hmr": "^0.16.0",
+    "svelte": "^5.45.8",
+    "svelte-preprocess": "^6.0.3",
     "svelte-spa-router": "^4.0.1",
-    "svelte-store": "^0.0.2"
+    "svelte-store": "^0.0.2",
+    "vite": "^7.2.7"
   },
   "devDependencies": {
-    "@snowpack/plugin-dotenv": "^2.2.0",
-    "@snowpack/plugin-postcss": "^1.4.3",
-    "@snowpack/plugin-svelte": "^3.7.0",
-    "@snowpack/plugin-typescript": "^1.2.1",
-    "@snowpack/web-test-runner-plugin": "^0.2.2",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@testing-library/svelte": "^5.2.0",
-    "@tsconfig/svelte": "^5.0.4",
+    "@tsconfig/svelte": "^5.0.6",
     "@types/chai": "^4.3.16",
     "@types/mocha": "^10.0.7",
-    "@types/snowpack-env": "^2.3.7",
+    "@types/node": "^24.10.2",
     "@web/test-runner": "^0.18.2",
     "@yarnpkg/pnpify": "^4.1.0",
     "autoprefixer": "^10.4.19",
     "chai": "^5.1.1",
     "postcss": "^8.4.39",
-    "prettier": "^3.3.2",
-    "snowpack": "^3.8.8",
-    "svelte-preprocess": "^6.0.1",
+    "prettier": "^3.7.4",
+    "prettier-plugin-svelte": "3",
+    "svelte-check": "^4.3.4",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.2"
+    "typescript": "^5.9.3"
   },
-  "packageManager": "yarn@3.6.2"
+  "packageManager": "yarn@4.12.0"
 }
