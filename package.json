@@ -25,7 +25,7 @@
     "@yarnpkg/pnpify": "^4.1.0",
     "autoprefixer": "^10.4.19",
     "chai": "^5.1.1",
-    "postcss": "^8.4.39",
+    "postcss": "^8.5.23",
     "prettier": "^3.7.4",
     "prettier-plugin-svelte": "3",
     "svelte-check": "^4.3.4",
